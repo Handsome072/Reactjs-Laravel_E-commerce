@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.welcome{
+
+    background-image: url('../bg-home.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+  }
+  
+  .content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+  }
+  .presentation{
+  color: white;
+  border-radius: 20px ;
+  background-color: rgba(0, 0, 0, 0.733);
+  }
+  .presentation h1{
+    font-size: 50px;
+    color: #20a808;
+  }
+  .presentation p{
+    font-size: 22px;
+    margin-bottom: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .presentation span{
+    font-size: 35px;
+  }
+  .presentation a{
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .presentation .start-button{
+    background-color: #20a808;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+  
+  }
+  .presentation .start-button:hover{
+    background-color: yellow;
+    color: black;
+   
+  }
+ 
