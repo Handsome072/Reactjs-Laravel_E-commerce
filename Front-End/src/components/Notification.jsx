@@ -1,12 +1,9 @@
-
 import React from 'react';
 
 function Notification({ cartItemsCount }) {
   return (
-    <div >
-  
-
- {cartItemsCount}
+    <div>
+      {cartItemsCount}
     </div>
   );
 }

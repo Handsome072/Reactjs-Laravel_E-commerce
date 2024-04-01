@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from 'react-icons/fa';
 
-
 const Footer = () => {
-
     const [showButton, setShowButton] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
 
@@ -18,10 +16,7 @@ const Footer = () => {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         setShowButton(false);
-
     };
-
-
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -32,24 +27,18 @@ const Footer = () => {
 
     const handleAnimationEnd = () => {
         setIsClicked(false);
-        console.log("Bouton Cliqué")
     };
-
 
     return (
         <>
-            <footer >
-                <div className='container-fluid foot p-5 '>
+            <footer>
+                <div className='container-fluid foot p-5'>
                     <div className="container">
-
-
                         <div className="row">
                             <div className='col-md-3'>
                                 <h1 className="logo">Handsome</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
-
                             </div>
-
                             <div className='col-md-3'>
                                 <h2>A Propos</h2>
                                 <ul>
@@ -77,25 +66,21 @@ const Footer = () => {
                                     <li>Email:&nbsp;andsonandriamitovy@gmail.com</li>
                                     <li>Phone: +261 34 18 522 33</li>
                                 </ul>
-
-
                             </div>
                             <div
-                                className={`up-bouton ${showButton ? "show" : ""}  ${isClicked ? "clicked" : ""} `}
+                                className={`up-bouton ${showButton ? "show" : ""} ${isClicked ? "clicked" : ""}`}
                                 onClick={scrollToTop}
                                 onAnimationEnd={handleAnimationEnd}
                             >
-                                <span ><FaArrowUp /></span>
+                                <span><FaArrowUp /></span>
                             </div>
-
                         </div>
                     </div>
-                    <p className="text-center pt-5 pb-0 mb-0 footer-text  ">copyright@projet2023andsonandriamitovy</p>
+                    <p className="text-center pt-5 pb-0 mb-0 footer-text">copyright@projet2023andsonandriamitovy</p>
                 </div>
-
             </footer>
         </>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

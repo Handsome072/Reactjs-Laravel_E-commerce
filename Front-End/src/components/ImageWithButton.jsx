@@ -13,11 +13,11 @@ const ImageWithButton = ({ imageUrl, productName }) => {
 
   return (
     <div
-      className=" image-container position-relative text-center"
+      className="image-container position-relative text-center"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-    > 
-    <span > {productName} </span>
+    >
+      <span>{productName}</span>
       <img src={imageUrl} alt={productName} className="img-fluid" />
       <button
         className={`btn btn-primary view-button ${isHovered ? 'visible' : ''}`}
